@@ -1,61 +1,100 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.banner{
+
+.main{
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)),
-    url("img.jpg");
-    background-size: cover;
+    background: url(pics/bg.jpg);
     background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
 }
+
 .navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
+    width: 86%;
     display: flex;
+    margin: auto;
+    padding: 15px 0;
     align-items: center;
     justify-content: space-between;
 }
-.logo{
-    width: 120px;
+
+.navbar .logo{
+    width: 160px;
     cursor: pointer;
+    margin-left: -2%;
 }
-.navbar ul li{
+
+ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 30px;
-    position: static;
+    padding: 10px 16px;
 }
-.navbar ul li a {
-    text-decoration: navajowhite;
-    color: aliceblue;
-    text-transform: uppercase;
-}
-.navbar ul li::after{
-    content: '';
-    height: 3px;
-    width: 100%;
-    background: chartreuse;
-    position: absolute;
-    left: o;
-    bottom: -10px;
-    transition: 0.5s;
-}
-.navbar ul li:hover::after{
-    width: 100%;
-}
-.content{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50);
-    text-align: center;
-    color: white;
 
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategrey;
+    transition: .4s ease;
 }
-.content p{
-    line-height: 25px;
+
+ul li a:hover{
+    color: rgb(230,104,59);
 }
+
+.info{
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+.info h1{
+    font-size: 65px;
+    color: rgb(36,32,30);
+}
+
+.info h3{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+}
+
+.info span{
+    color: rgb(230,104,50):
+}
+
+.info a{
+    text-decoration: none;
+    color: #fff;
+    background: rgb(36,32,30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover{
+    background: rgb(59,174,209);
+}
+
+.image{
+    width: 10%;
+    height: 70%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img{
+    position:relative;
+    height: 90%;
+    left:10;
+    transform: translate(-70%);
+    bottom: 0;
+}
+
+
