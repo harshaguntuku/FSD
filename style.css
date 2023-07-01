@@ -5,7 +5,7 @@
 
 .main{
     width: 100%;
-    background: url(pics/bg.jpg);
+    background: url(pics/bg.webp);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -25,6 +25,7 @@
 .navbar .logo{
     width: 160px;
     cursor: pointer;
+    margin-top: 3%;
     margin-left: -2%;
 }
 
@@ -39,16 +40,12 @@ ul li a{
     font-weight: bold;
     text-decoration: none;
     color: darkslategrey;
+    margin-top: -3%;
     transition: .4s ease;
 }
 
-ul li a:hover{
+.ul li a:hover{
     color: rgb(230,104,59);
-}
-
-.info{
-    margin-left: 1%;
-    margin-top: 2%;
 }
 
 .info h1{
@@ -57,13 +54,13 @@ ul li a:hover{
 }
 
 .info h3{
-    font-size: 16px;
-    letter-spacing: 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
     line-height: 24px;
 }
 
 .info span{
-    color: rgb(230,104,50):
+    color: rgb(230,104,59);
 }
 
 .info a{
@@ -82,19 +79,17 @@ ul li a:hover{
 }
 
 .image{
-    width: 10%;
-    height: 70%;
+    width: 30%;
+    height: 60%;
     position: absolute;
     right: 100px;
     bottom: 0;
 }
 
 .image img{
-    position:relative;
-    height: 90%;
-    left:10;
-    transform: translate(-70%);
+    position:absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-50%);
     bottom: 0;
 }
-
-
